@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 public class Fechas {
     public void calcularTempo (){
         Instant ahora1=Instant.now();
-        JOptionPane.showInputDialog("Escribe a seguinte:A documentación é todo aquel \n conxunto de manuais impresos \n ou en formato dixital que \n explique unha aplicación \n informática .");
+        JOptionPane.showInputDialog("Escribe a seguinte: \n A documentación é todo aquel \n conxunto de manuais impresos \n ou en formato dixital que \n explique unha aplicación \n informática .");
         Instant antes1=Instant.now();
  
         System.out.println(Duration.between(ahora1, antes1).getSeconds());
