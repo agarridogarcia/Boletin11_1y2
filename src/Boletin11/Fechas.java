@@ -11,13 +11,15 @@ import javax.swing.JOptionPane;
 public class Fechas {
     public void calcularTempo (){
         Instant ahora1=Instant.now();
-        JOptionPane.showInputDialog("Escribe a seguinte: \n A documentación é todo aquel \n conxunto de manuais impresos \n ou en formato dixital que \n explique unha aplicación \n informática .");
+        String resposta=JOptionPane.showInputDialog("Escribe a seguinte: \n A documentación é todo aquel \n conxunto de manuais impresos \n ou en formato dixital que \n explique unha aplicación \n informática .");
         Instant antes1=Instant.now();
- 
-        System.out.println(Duration.between(ahora1, antes1).getSeconds());
+        System.out.println("Tardaste em escribir a frase: " + Duration.between(ahora1, antes1).getSeconds() + "segundos");
+        
     }
+    
+   
     public void fechaActual (){
-        LocalDateTime ahora = LocalDateTime.now(); 
+       LocalDateTime ahora = LocalDateTime.now(); 
        System.out.printf("A fecha e: %s%n", ahora); 
        LocalDateTime algunDia = LocalDateTime.of(1990, Month.AUGUST, 6, 6, 10); 
        System.out.printf("Cumpleanos %s%n", algunDia); 
